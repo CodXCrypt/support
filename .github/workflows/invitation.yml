@@ -1,4 +1,3 @@
-name: Invitation to org
 on:
   issues:
     types: [labeled]
@@ -10,9 +9,9 @@ jobs:
       - name: Invite on label
         uses: vj-abigo/invite-on-label@v1.2
         with:
-          organization: CodXCrypt-Community
+          organization: EddieHubCommunity
           label: invite me to the organisation
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          comment: '<b>Invitation sent for the GitHub Organisation. Welcome to the community 🎉</b> Collaboration First Code Second !'
+          comment: '<b>Invitation sent for the GitHub Organisation. Welcome to the CodXCrypt community 🎉</b>'
         env:
           INVITE_TOKEN: ${{ secrets.INVITE_TOKEN }}
